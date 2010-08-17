@@ -1,0 +1,77 @@
+/*************************************
+bc program:scientific_constants.bc
+author:Steffen Brinkmann
+e-mail:subcom@users.sourceforge.net
+comments:
+- published uner the GPL
+- contains particle masses, basic constants, such as speed of light in the vacuum and the gravitational constant.
+- scale is set to 100
+*************************************/
+
+scale=100
+
+/* -- I -- particle masses: */
+
+/* proton rest mass in kg */
+mp       = 1.6726231*10^(-27)
+/* neutron rest mass in kg */
+mn       = 1.6749286*10^(-27)
+/* electron rest mass in kg */
+me       = 9.1093897*10^(-31)
+
+/* proton rest mass in eV */
+mpev     = 938.28*10^6
+/* neutron rest mass in eV */
+mnev     = 939.57*10^6
+/* electron rest mass in eV */
+meev     = .511*10^6
+
+/* -- II -- general constants: */
+/* speed of light in the vacuum in m/s */
+c        = 299792458
+/* Planck constant in Js */
+h        = 6.6260755*10^(-34)
+/* Planck constant divided by 2*pi in Js */
+hbar     = 1.05457266*10^(-34)
+/* boltzmann constant in J/K */
+kb       = 1.380658*10^(-23)
+/* elementary charge in C */
+ec       = 1.60217733*10^(-19)
+/* avogadro number in 1/mol */
+na       = 6.0221367*10^23
+/* dielectric constant in C^2/Jm */
+epsilon0 = 8.854187817*10^(-12)
+/* permeability of vacuum in T^2*m^3/J */
+mu0      = 12.566370614
+/* fine structure constant */
+alpha    = .00729735307
+/* Bohr magneton J/T */
+mub      = 9.2740154*10^(-24)
+/* nuclear magneton J/T */
+mun      = 5.0507866*10^(-27)
+/* free electron g factor */
+ge       = 2.002319304386
+/* free electron gyromagnetic ratio in T/s */
+gammae   = 1.7608592*10^11
+/* electron magnetic moment */
+mue      = -9.2847701*10^(-24)
+/* proton gyromagnetic ratio in water in T/s */
+gammap   = 2.67515255*10^8
+/* proton magnetic moment in J/T */
+mup      = 1.41060761*10^(-26)
+/* atomic mass unit in kg */
+amu      = 1.66057*10^(-27)
+/* Bohr radius in m */
+a0       = 5.29177*10^(-11)
+/* electron radius in m */
+re       = 2.81792*10^(-15)
+/* molar volume in l/mol */
+vmol     = 22.41383
+/* proton g factor (lande factor) */
+gh       = 5.585
+/* gravitational constant m^3/kg*s^2 */
+grav     = 6.673*10^(-11)
+/* acceleration due to gravity on surface of earth in m/s^2 */
+g        = 9.80665
+/* compton wavelength of the electron m */
+lambdac  = 2.42631*10^(-12)

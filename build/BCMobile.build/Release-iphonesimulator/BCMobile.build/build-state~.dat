@@ -1,0 +1,1318 @@
+TBCMobile
+v7
+r0
+t300612096.255143
+cCheck dependencies
+cProcessInfoPlistFile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Info.plist BCMobile-Info.plist
+cCompileXIB /Users/sixt06/Developer/ibc/MainWindow.xib
+cCpResource build/Release-iphonesimulator/BCMobile.app/libmath.b bc/libmath.b
+cCopyPlistFile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Entitlements.plist Entitlements.plist
+cCpResource build/Release-iphonesimulator/BCMobile.app/Settings.bundle Settings.bundle
+cCpResource build/Release-iphonesimulator/BCMobile.app/BCMobile.png BCMobile.png
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/CLIViewController.xib
+cCompileXIB /Users/sixt06/Developer/ibc/AccessoryView.xib
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/HelpViewController.xib
+cCpResource build/Release-iphonesimulator/BCMobile.app/help.html help.html
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.xib
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.xib
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.xib
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.xib
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/VariablesViewController.xib
+cCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.xib
+cCpResource build/Release-iphonesimulator/BCMobile.app/extensions.bc extensions.bc
+cCpResource build/Release-iphonesimulator/BCMobile.app/scientific_constants.bc scientific_constants.bc
+cCompileXIB /Users/sixt06/Developer/ibc/ScriptEditAccessoryView.xib
+cProcessPCH /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch.gch BCMobile_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch.gch BCMobile_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/main.o /Users/sixt06/Developer/ibc/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCWrapper.o /Users/sixt06/Developer/ibc/Classes/BCWrapper.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/iBCAppDelegate.o /Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/bc.o /Users/sixt06/Developer/ibc/bc/bc.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/execute.o /Users/sixt06/Developer/ibc/bc/execute.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/global.o /Users/sixt06/Developer/ibc/bc/global.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/load.o /Users/sixt06/Developer/ibc/bc/load.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/number.o /Users/sixt06/Developer/ibc/bc/number.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/scan.o /Users/sixt06/Developer/ibc/bc/scan.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/storage.o /Users/sixt06/Developer/ibc/bc/storage.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/util.o /Users/sixt06/Developer/ibc/bc/util.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/CLIViewController.o /Users/sixt06/Developer/ibc/Classes/CLIViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/HelpViewController.o /Users/sixt06/Developer/ibc/Classes/HelpViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTableViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptEditViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptInfoViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ConsoleViewController.o /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/VariablesViewController.o /Users/sixt06/Developer/ibc/Classes/VariablesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTitleViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptStorage.o /Users/sixt06/Developer/ibc/Classes/ScriptStorage.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile normal i386
+cGenerateDSYMFile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app.dSYM /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile
+cTouch /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C349BB80000000000000132
+t1278516152
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/alloca.h
+c000000004A5C14A60000000000000588
+t1247548582
+s1416
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/assert.h
+c000000004A5C14A60000000000000DCB
+t1247548582
+s3531
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/ctype.h
+c000000004A5C14A60000000000002C18
+t1247548582
+s11288
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/errno.h
+c000000004A5C14A600000000000003EB
+t1247548582
+s1003
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/histedit.h
+c000000004A11A2FC00000000000019F8
+t1242669820
+s6648
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/pthread.h
+c000000004A5C14A700000000000038F0
+t1247548583
+s14576
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/readline/history.h
+c000000004A11A2FC0000000000001C28
+t1242669820
+s7208
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/readline/readline.h
+c000000004A11A2FC0000000000001C28
+t1242669820
+s7208
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/signal.h
+c000000004A5C14A700000000000014F0
+t1247548583
+s5360
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/strings.h
+c000000004A5C14A60000000000000DA4
+t1247548582
+s3492
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/sys/types.h
+c000000004A73D6550000000000002905
+t1249105493
+s10501
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/unistd.h
+c000000004A5C14A7000000000000563E
+t1247548583
+s22078
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004A1198340000000000000C7E
+t1242667060
+s3198
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11983400000000000010DD
+t1242667060
+s4317
+
+N/Users/sixt06/Developer/ibc/AccessoryView.xib
+c000000004C117A8A00000000000084BA
+t1276213898
+s33978
+
+N/Users/sixt06/Developer/ibc/BCMobile.png
+c000000004B442B700000000000002ADB
+t1262758768
+s10971
+
+N/Users/sixt06/Developer/ibc/BCMobile_Prefix.pch
+c000000004B442AF200000000000000B9
+t1262758642
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/BCWrapper.h
+c000000004C3AC26900000000000004FC
+t1278919273
+s1276
+i<Foundation/Foundation.h>
+
+N/Users/sixt06/Developer/ibc/Classes/BCWrapper.m
+c000000004C3AC2100000000000001BE7
+t1278919184
+s7143
+i"BCWrapper.h"
+i"ScriptStorage.h"
+i"../bc/bcdefs.h"
+i"../bc/global.h"
+i"../bc/proto.h"
+
+N/Users/sixt06/Developer/ibc/Classes/CLIViewController.h
+c000000004C09C9A4000000000000072A
+t1275709860
+s1834
+i<UIKit/UIKit.h>
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/CLIViewController.m
+c000000004C3A0A9E00000000000020B0
+t1278872222
+s8368
+i"CLIViewController.h"
+i"HelpViewController.h"
+i"ScriptTableViewController.h"
+i"VariablesViewController.h"
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/CLIViewController.xib
+c000000004C0C7BB00000000000006213
+t1275886512
+s25107
+
+N/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.h
+c000000004C0C6A9B00000000000003C2
+t1275882139
+s962
+i<UIKit/UIKit.h>
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m
+c000000004C3A06C50000000000001E4C
+t1278871237
+s7756
+i"ScriptStorage.h"
+i"ConsoleViewController.h"
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.xib
+c000000004C0C7EB10000000000005817
+t1275887281
+s22551
+
+N/Users/sixt06/Developer/ibc/Classes/HelpViewController.h
+c000000004C09C9B00000000000000170
+t1275709872
+s368
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/HelpViewController.m
+c000000004C04D7EC00000000000009A8
+t1275385836
+s2472
+i"HelpViewController.h"
+
+N/Users/sixt06/Developer/ibc/Classes/HelpViewController.xib
+c000000004BF140D90000000000005913
+t1274101977
+s22803
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.h
+c000000004C315EEB0000000000000500
+t1278303979
+s1280
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m
+c000000004C315FD60000000000002108
+t1278304214
+s8456
+i"ScriptStorage.h"
+i"ScriptEditViewController.h"
+i"ScriptInfoViewController.h"
+i"ScriptTitleViewController.h"
+i"ConsoleViewController.h"
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.xib
+c000000004C11840D000000000000588E
+t1276216333
+s22670
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.h
+c000000004C0C68F200000000000003C0
+t1275881714
+s960
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m
+c000000004C0C6B380000000000000B5B
+t1275882296
+s2907
+i"ScriptInfoViewController.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.xib
+c000000004C0C6923000000000000829D
+t1275881763
+s33437
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptStorage.h
+c000000004C0C76F800000000000002D5
+t1275885304
+s725
+i<Foundation/Foundation.h>
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptStorage.m
+c000000004C0C76EE00000000000007F0
+t1275885294
+s2032
+i"ScriptStorage.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.h
+c000000004C0C5FB800000000000001F9
+t1275879352
+s505
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m
+c000000004C0C79A9000000000000243C
+t1275885993
+s9276
+i"ScriptStorage.h"
+i"ScriptTableViewController.h"
+i"ScriptEditViewController.h"
+i"ScriptInfoViewController.h"
+i"ScriptTitleViewController.h"
+i"ConsoleViewController.h"
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.xib
+c000000004C0475AE0000000000004C56
+t1275360686
+s19542
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.h
+c000000004C1173EE000000000000021B
+t1276212206
+s539
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m
+c000000004C117574000000000000095A
+t1276212596
+s2394
+i"ScriptTitleViewController.h"
+i"ScriptStorage.h"
+
+N/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.xib
+c000000004C08DA500000000000005CCB
+t1275648592
+s23755
+
+N/Users/sixt06/Developer/ibc/Classes/VariablesViewController.h
+c000000004C0C81EF00000000000003BA
+t1275888111
+s954
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/VariablesViewController.m
+c000000004C09D3F10000000000001040
+t1275712497
+s4160
+i"VariablesViewController.h"
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Classes/VariablesViewController.xib
+c000000004C117E2C00000000000089F2
+t1276214828
+s35314
+
+N/Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.h
+c000000004C09C9DA0000000000000248
+t1275709914
+s584
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m
+c000000004C11827900000000000008EB
+t1276215929
+s2283
+i"iBCAppDelegate.h"
+i"CLIViewController.h"
+i"BCWrapper.h"
+
+N/Users/sixt06/Developer/ibc/Entitlements.plist
+c000000004B44262C00000000000000E1
+t1262757420
+s225
+
+N/Users/sixt06/Developer/ibc/MainWindow.xib
+c000000004C39EAEC000000000000482F
+t1278864108
+s18479
+
+N/Users/sixt06/Developer/ibc/ScriptEditAccessoryView.xib
+c000000004C1185CD0000000000008AC7
+t1276216781
+s35527
+
+N/Users/sixt06/Developer/ibc/Settings.bundle
+c000000004C3160FF00000000000000AA
+t1278304511
+s170
+
+N/Users/sixt06/Developer/ibc/bc/bc.c
+c000000004C118128000000000000E290
+t1276215592
+s58000
+i"bcdefs.h"
+i"global.h"
+i"proto.h"
+i<stdio.h>
+i<alloca.h>
+i<malloc.h>
+
+N/Users/sixt06/Developer/ibc/bc/bc.h
+c000000004B44262C00000000000002E3
+t1262757420
+s739
+
+N/Users/sixt06/Developer/ibc/bc/bcdefs.h
+c000000004B44262C000000000000139E
+t1262757420
+s5022
+i"config.h"
+i<stdio.h>
+i<sys/types.h>
+i<ctype.h>
+i<strings.h>
+i<string.h>
+i<limits.h>
+i<histedit.h>
+i<readline/readline.h>
+i<readline/history.h>
+i"const.h"
+i"number.h"
+
+N/Users/sixt06/Developer/ibc/bc/config.h
+c000000004C316A6100000000000008A8
+t1278306913
+s2216
+
+N/Users/sixt06/Developer/ibc/bc/const.h
+c000000004C1987CE0000000000000AA5
+t1276741582
+s2725
+
+N/Users/sixt06/Developer/ibc/bc/execute.c
+c000000004C198E6700000000000047C4
+t1276743271
+s18372
+i"bcdefs.h"
+i<signal.h>
+i<pthread.h>
+i"global.h"
+i"proto.h"
+
+N/Users/sixt06/Developer/ibc/bc/global.c
+c000000004B44262C00000000000005BD
+t1262757420
+s1469
+i"bcdefs.h"
+i"global.h"
+i"libmath.h"
+
+N/Users/sixt06/Developer/ibc/bc/global.h
+c000000004B44262C00000000000010BB
+t1262757420
+s4283
+
+N/Users/sixt06/Developer/ibc/bc/libmath.b
+c000000004B44262C000000000000189C
+t1262757420
+s6300
+
+N/Users/sixt06/Developer/ibc/bc/libmath.h
+c000000004B44262C000000000000097F
+t1262757420
+s2431
+
+N/Users/sixt06/Developer/ibc/bc/load.c
+c000000004B44262C0000000000001DD8
+t1262757420
+s7640
+i"bcdefs.h"
+i"global.h"
+i"proto.h"
+
+N/Users/sixt06/Developer/ibc/bc/number.c
+c000000004B44262C000000000000A1C0
+t1262757420
+s41408
+i<stdio.h>
+i"config.h"
+i"number.h"
+i<assert.h>
+i<stdlib.h>
+i<ctype.h>
+i"muldigits.h"
+
+N/Users/sixt06/Developer/ibc/bc/number.h
+c000000004B44262C00000000000010D6
+t1262757420
+s4310
+
+N/Users/sixt06/Developer/ibc/bc/proto.h
+c000000004B44262C0000000000001491
+t1262757420
+s5265
+i<unistd.h>
+i<stdlib.h>
+
+N/Users/sixt06/Developer/ibc/bc/scan.c
+c000000004B44262C000000000000EA13
+t1262757420
+s59923
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<io.h>
+i<stdlib.h>
+i"bcdefs.h"
+i"bc.h"
+i"global.h"
+i"proto.h"
+i<errno.h>
+i<histedit.h>
+i<stdlib.h>
+
+N/Users/sixt06/Developer/ibc/bc/storage.c
+c000000004C1987980000000000005900
+t1276741528
+s22784
+i"bcdefs.h"
+i"global.h"
+i"proto.h"
+
+N/Users/sixt06/Developer/ibc/bc/util.c
+c000000004C19871100000000000045BD
+t1276741393
+s17853
+i"bcdefs.h"
+i<stdarg.h>
+i"global.h"
+i"proto.h"
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCMobile.LinkFileList
+c000000004C3AC27500000000000009AD
+t1278919285
+s2477
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCWrapper.o
+t1278919293
+s29724
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/CLIViewController.o
+t1278919294
+s73936
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ConsoleViewController.o
+t1278919295
+s66916
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/HelpViewController.o
+t1278919294
+s46136
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptEditViewController.o
+t1278919295
+s70520
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptInfoViewController.o
+t1278919295
+s47540
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptStorage.o
+t1278919296
+s13576
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTableViewController.o
+t1278919295
+s68876
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTitleViewController.o
+t1278919296
+s48292
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/VariablesViewController.o
+t1278919295
+s52388
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/bc.o
+t1278919293
+s24132
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/execute.o
+t1278919293
+s23808
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/global.o
+t1278919293
+s10804
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/iBCAppDelegate.o
+t1278919293
+s57472
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/load.o
+t1278919293
+s14992
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/main.o
+t1278919292
+s6268
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/number.o
+t1278919294
+s54704
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/scan.o
+t1278919293
+s29008
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/storage.o
+t1278919294
+s24296
+
+N/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/util.o
+t1278919294
+s22080
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app
+t1278919296
+s782
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app.dSYM
+t1278919296
+s102
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/AccessoryView.nib
+t1278919288
+s1877
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile
+t1278919296
+s185068
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile.png
+t1278919286
+s10971
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/CLIViewController.nib
+t1278919288
+s1530
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ConsoleViewController.nib
+t1278919290
+s1460
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Entitlements.plist
+t1278919286
+s62
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/HelpViewController.nib
+t1278919289
+s1408
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Info.plist
+t1278919286
+s632
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/MainWindow.nib
+t1278919288
+s931
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/PkgInfo
+t1278919286
+s8
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptEditAccessoryView.nib
+t1278919291
+s1821
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptEditViewController.nib
+t1278919289
+s1346
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptInfoViewController.nib
+t1278919289
+s2607
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptTableViewController.nib
+t1278919289
+s979
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptTitleViewController.nib
+t1278919290
+s1936
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Settings.bundle
+t1278919286
+s136
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/VariablesViewController.nib
+t1278919290
+s3146
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/extensions.bc
+t1278919290
+s6554
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/help.html
+t1278919288
+s40545
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/libmath.b
+t1278919286
+s6300
+
+N/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/scientific_constants.bc
+t1278919290
+s2252
+
+N/Users/sixt06/Developer/ibc/extensions.bc
+c000000004C098DC7000000000000199A
+t1275694535
+s6554
+
+N/Users/sixt06/Developer/ibc/help.html
+c000000004C08FF4F0000000000009E61
+t1275658063
+s40545
+
+N/Users/sixt06/Developer/ibc/main.m
+c000000004B44262C0000000000000168
+t1262757420
+s360
+i<UIKit/UIKit.h>
+
+N/Users/sixt06/Developer/ibc/scientific_constants.bc
+c000000004C098CD300000000000008CC
+t1275694291
+s2252
+
+N/var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch.gch
+t1278919292
+s14896144
+
+N/var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch.gch
+t1278919291
+s2138480
+
+NBCMobile-Info.plist
+c000000004C3163AA0000000000000378
+t1278305194
+s888
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies300612085#300612086#0(0"0(0#1#0"8608762112#0"0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCWrapper.o /Users/sixt06/Developer/ibc/Classes/BCWrapper.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612092.827263
+e300612093.140184
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCWrapper.o
+x/Users/sixt06/Developer/ibc/Classes/BCWrapper.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper setup]':
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:111: warning: implicit declaration of function 'pthread_mutex_init'
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper parse:]':
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:183: warning: implicit declaration of function 'yy_scan_string'
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:183: warning: initialization makes pointer from integer without a cast
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:187: warning: implicit declaration of function 'yy_delete_buffer'
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper __stdinp:]':
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:192: warning: initialization discards qualifiers from pointer target type
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:198: warning: implicit declaration of function 'pthread_mutex_unlock'
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper bcWillWaitForInput]':
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:271: warning: initialization discards qualifiers from pointer target type
+o/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:283: warning: implicit declaration of function 'pthread_mutex_lock'
+lSLF07#2@55"Compile /Users/sixt06/Developer/ibc/Classes/BCWrapper.m300612092#300612093#0(1289"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper setup]':/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:111: warning: implicit declaration of function 'pthread_mutex_init'/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper parse:]':/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:183: warning: implicit declaration of function 'yy_scan_string'/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:183: warning: initialization makes pointer from integer without a cast/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:187: warning: implicit declaration of function 'yy_delete_buffer'/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper __stdinp:]':/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:192: warning: initialization discards qualifiers from pointer target type/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:198: warning: implicit declaration of function 'pthread_mutex_unlock'/Users/sixt06/Developer/ibc/Classes/BCWrapper.m: In function '-[BCWrapper bcWillWaitForInput]':/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:271: warning: initialization discards qualifiers from pointer target type/Users/sixt06/Developer/ibc/Classes/BCWrapper.m:283: warning: implicit declaration of function 'pthread_mutex_lock'8(22@53"Implicit declaration of function 'pthread_mutex_init'300612092#83#116#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#111#0#111#0#36"implicit declaration of function '*'0(22@49"Implicit declaration of function 'yy_scan_string'300612092#283#112#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#183#0#183#0#36"implicit declaration of function '*'0(22@56"Initialization makes pointer from integer without a cast300612092#395#119#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#183#0#183#0#0"0(22@51"Implicit declaration of function 'yy_delete_buffer'300612092#514#114#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#187#0#187#0#36"implicit declaration of function '*'0(22@59"Initialization discards qualifiers from pointer target type300612092#715#122#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#192#0#192#0#0"0(22@55"Implicit declaration of function 'pthread_mutex_unlock'300612092#837#118#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#198#0#198#0#36"implicit declaration of function '*'0(22@59"Initialization discards qualifiers from pointer target type300612092#1051#122#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#271#0#271#0#0"0(22@53"Implicit declaration of function 'pthread_mutex_lock'300612092#1173#116#0(6@47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m300611984#283#0#283#0#36"implicit declaration of function '*'0(0#0#47"/Users/sixt06/Developer/ibc/Classes/BCWrapper.m8613377824#1853"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/BCWrapper.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCWrapper.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/CLIViewController.o /Users/sixt06/Developer/ibc/Classes/CLIViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612094.402057
+e300612094.922351
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/CLIViewController.o
+x/Users/sixt06/Developer/ibc/Classes/CLIViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController textView:shouldChangeTextInRange:replacementText:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:127: warning: local declaration of 'textView' hides instance variable
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:131: warning: local declaration of 'textView' hides instance variable
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController textViewDidChange:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:141: warning: unused variable 'range'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController bcDidPutCharacter:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: (Messages without a matching method signature
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: will be assumed to return 'id' and accept
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: '...' as arguments.)
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController lastVar:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:288: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController openParen:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:292: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController closeParen:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:296: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController plusSymbol:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:300: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController minSymbol:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:304: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController mulSymbol:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:308: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController divSymbol:]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:312: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController showPrompt]':
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:323: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: At top level:
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:326: warning: incomplete implementation of class 'CLIViewController'
+o/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:326: warning: method definition for '-insertString:' not found
+lSLF07#2@63"Compile /Users/sixt06/Developer/ibc/Classes/CLIViewController.m300612094#300612094#0(3232"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController textView:shouldChangeTextInRange:replacementText:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:127: warning: local declaration of 'textView' hides instance variable/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:131: warning: local declaration of 'textView' hides instance variable/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController textViewDidChange:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:141: warning: unused variable 'range'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController bcDidPutCharacter:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: (Messages without a matching method signature/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: will be assumed to return 'id' and accept/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:222: warning: '...' as arguments.)/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController lastVar:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:288: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController openParen:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:292: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController closeParen:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:296: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController plusSymbol:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:300: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController minSymbol:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:304: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController mulSymbol:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:308: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController divSymbol:]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:312: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: In function '-[CLIViewController showPrompt]':/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:323: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m: At top level:/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:326: warning: incomplete implementation of class 'CLIViewController'/Users/sixt06/Developer/ibc/Classes/CLIViewController.m:326: warning: method definition for '-insertString:' not found16(22@55"Local declaration of 'textView' hides instance variable300612094#143#126#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#127#0#127#0#0"0(22@55"Local declaration of 'textView' hides instance variable300612094#269#126#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#131#0#131#0#0"0(22@23"Unused variable 'range'300612094#507#94#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#141#0#141#0#19"unused variable '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#713#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#222#0#222#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)300612094#830#116#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#222#0#222#0#0"0(22@46"'UITextView' may not respond to '-insertText:'300612094#1251#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#288#0#288#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#1472#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#292#0#292#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#1694#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#296#0#296#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#1916#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#300#0#300#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#2137#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#304#0#304#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#2358#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#308#0#308#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#2579#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#312#0#312#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612094#2800#117#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#323#0#323#0#26"'*' may not respond to '*'0(23@13"At top level:300612094#2917#71#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#0#0#0#0#0"0(22@54"Incomplete implementation of class 'CLIViewController'300612094#2988#125#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#326#0#326#0#38"incomplete implementation of class '*'0(22@48"Method definition for '-insertString:' not found300612094#3113#119#0(6@55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m300565022#326#0#326#0#35"method definition for '*' not found0(0#0#55"/Users/sixt06/Developer/ibc/Classes/CLIViewController.m8611890656#1869"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/CLIViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/CLIViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ConsoleViewController.o /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612095.386962
+e300612095.876954
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ConsoleViewController.o
+x/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidPutCharacter:]':
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: (Messages without a matching method signature
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: will be assumed to return 'id' and accept
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: '...' as arguments.)
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidStartExecution]':
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:212: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidFinishExecution]':
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:221: warning: 'UITextView' may not respond to '-insertText:'
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidCancelExecution]':
+o/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:229: warning: 'UITextView' may not respond to '-insertText:'
+lSLF07#2@67"Compile /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m300612095#300612095#0(1300"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidPutCharacter:]':/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: (Messages without a matching method signature/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: will be assumed to return 'id' and accept/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:198: warning: '...' as arguments.)/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidStartExecution]':/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:212: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidFinishExecution]':/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:221: warning: 'UITextView' may not respond to '-insertText:'/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m: In function '-[ConsoleViewController bcDidCancelExecution]':/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m:229: warning: 'UITextView' may not respond to '-insertText:'5(22@46"'UITextView' may not respond to '-insertText:'300612095#120#121#0(6@59"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m300564037#198#0#198#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)300612095#241#120#0(6@59"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m300564037#198#0#198#0#0"0(22@46"'UITextView' may not respond to '-insertText:'300612095#693#121#0(6@59"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m300564037#212#0#212#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612095#936#121#0(6@59"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m300564037#221#0#221#0#26"'*' may not respond to '*'0(22@46"'UITextView' may not respond to '-insertText:'300612095#1179#121#0(6@59"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m300564037#229#0#229#0#26"'*' may not respond to '*'0(0#0#59"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m8609147104#1877"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ConsoleViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/HelpViewController.o /Users/sixt06/Developer/ibc/Classes/HelpViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612094.631379
+e300612094.776498
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/HelpViewController.o
+x/Users/sixt06/Developer/ibc/Classes/HelpViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/sixt06/Developer/ibc/Classes/HelpViewController.m300612094#300612094#0(0"0(0#0#56"/Users/sixt06/Developer/ibc/Classes/HelpViewController.m8612399296#1871"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/HelpViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/HelpViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptEditViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612094.922448
+e300612095.386700
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptEditViewController.o
+x/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m300612094#300612095#0(0"0(0#0#62"/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m8612001312#1883"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptEditViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptInfoViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612095.182209
+e300612095.436197
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptInfoViewController.o
+x/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m: In function '-[ScriptInfoViewController viewDidLoad]':
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:33: warning: receiver 'ScriptStorage' is a forward class and corresponding @interface may not exist
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: no '-script:' method found
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: (Messages without a matching method signature
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: will be assumed to return 'id' and accept
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: '...' as arguments.)
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m: In function '-[ScriptInfoViewController loadOnStartupDidChanged:]':
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:83: warning: no '-script:' method found
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:88: warning: no '-replaceScript:forid:' method found
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m: In function '-[ScriptInfoViewController lockedDidChanged:]':
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:92: warning: no '-script:' method found
+o/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:97: warning: no '-replaceScript:forid:' method found
+lSLF07#2@70"Compile /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m300612095#300612095#0(1417"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m: In function '-[ScriptInfoViewController viewDidLoad]':/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:33: warning: receiver 'ScriptStorage' is a forward class and corresponding @interface may not exist/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: no '-script:' method found/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: (Messages without a matching method signature/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: will be assumed to return 'id' and accept/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:37: warning: '...' as arguments.)/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m: In function '-[ScriptInfoViewController loadOnStartupDidChanged:]':/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:83: warning: no '-script:' method found/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:88: warning: no '-replaceScript:forid:' method found/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m: In function '-[ScriptInfoViewController lockedDidChanged:]':/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:92: warning: no '-script:' method found/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m:97: warning: no '-replaceScript:forid:' method found7(22@86"Receiver 'ScriptStorage' is a forward class and corresponding @interface may not exist300612095#119#163#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#33#0#33#0#0"0(22@26"No '-script:' method found300612095#282#103#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#37#0#37#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)300612095#385#122#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#37#0#37#0#0"0(22@26"No '-script:' method found300612095#854#103#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#83#0#83#0#19"no '*' method found0(22@39"No '-replaceScript:forid:' method found300612095#957#116#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#88#0#88#0#19"no '*' method found0(22@26"No '-script:' method found300612095#1198#103#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#92#0#92#0#19"no '*' method found0(22@39"No '-replaceScript:forid:' method found300612095#1301#116#0(6@62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m297575096#97#0#97#0#19"no '*' method found0(0#0#62"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m8613563040#1883"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptInfoViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptStorage.o /Users/sixt06/Developer/ibc/Classes/ScriptStorage.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612095.877055
+e300612096.067677
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptStorage.o
+x/Users/sixt06/Developer/ibc/Classes/ScriptStorage.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/sixt06/Developer/ibc/Classes/ScriptStorage.m300612095#300612096#0(0"0(0#0#51"/Users/sixt06/Developer/ibc/Classes/ScriptStorage.m8610990464#1861"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/ScriptStorage.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptStorage.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTableViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612094.776654
+e300612095.182045
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTableViewController.o
+x/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m300612094#300612095#0(0"0(0#0#63"/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m8611467968#1885"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTableViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTitleViewController.o /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612095.813968
+e300612096.085808
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTitleViewController.o
+x/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m300612095#300612096#0(0"0(0#0#63"/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m8607345056#1885"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/ScriptTitleViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/VariablesViewController.o /Users/sixt06/Developer/ibc/Classes/VariablesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612095.436305
+e300612095.813869
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/VariablesViewController.o
+x/Users/sixt06/Developer/ibc/Classes/VariablesViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/sixt06/Developer/ibc/Classes/VariablesViewController.m300612095#300612095#0(0"0(0#0#61"/Users/sixt06/Developer/ibc/Classes/VariablesViewController.m8612784704#1881"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/VariablesViewController.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/VariablesViewController.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/bc.o /Users/sixt06/Developer/ibc/bc/bc.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.089256
+e300612093.428999
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/bc.o
+x/Users/sixt06/Developer/ibc/bc/bc.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@43"Compile /Users/sixt06/Developer/ibc/bc/bc.c300612093#300612093#0(0"0(0#0#35"/Users/sixt06/Developer/ibc/bc/bc.c8611558048#1780"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/bc.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/bc.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/execute.o /Users/sixt06/Developer/ibc/bc/execute.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.140296
+e300612093.496661
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/execute.o
+x/Users/sixt06/Developer/ibc/bc/execute.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@48"Compile /Users/sixt06/Developer/ibc/bc/execute.c300612093#300612093#0(0"0(0#0#40"/Users/sixt06/Developer/ibc/bc/execute.c8611495488#1790"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/execute.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/execute.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/global.o /Users/sixt06/Developer/ibc/bc/global.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.429187
+e300612093.470250
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/global.o
+x/Users/sixt06/Developer/ibc/bc/global.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/sixt06/Developer/ibc/bc/global.c300612093#300612093#0(0"0(0#0#39"/Users/sixt06/Developer/ibc/bc/global.c8607318304#1788"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/global.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/global.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/iBCAppDelegate.o /Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612092.903239
+e300612093.089152
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/iBCAppDelegate.o
+x/Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m300612092#300612093#0(0"0(0#0#52"/Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m8612245408#1863"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/Classes/iBCAppDelegate.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/iBCAppDelegate.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/load.o /Users/sixt06/Developer/ibc/bc/load.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.470357
+e300612093.662950
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/load.o
+x/Users/sixt06/Developer/ibc/bc/load.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/sixt06/Developer/ibc/bc/load.c300612093#300612093#0(0"0(0#0#37"/Users/sixt06/Developer/ibc/bc/load.c8613857504#1784"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/load.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/load.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/main.o /Users/sixt06/Developer/ibc/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612092.825944
+e300612092.903134
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/main.o
+x/Users/sixt06/Developer/ibc/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@42"Compile /Users/sixt06/Developer/ibc/main.m300612092#300612092#0(0"0(0#0#34"/Users/sixt06/Developer/ibc/main.m8613642944#1835"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/main.m -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/main.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/number.o /Users/sixt06/Developer/ibc/bc/number.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.496770
+e300612094.401956
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/number.o
+x/Users/sixt06/Developer/ibc/bc/number.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_new_num':
+o/Users/sixt06/Developer/ibc/bc/number.c:80: warning: implicit declaration of function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c:80: warning: incompatible implicit declaration of built-in function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_sub':
+o/Users/sixt06/Developer/ibc/bc/number.c:562: warning: incompatible implicit declaration of built-in function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_add':
+o/Users/sixt06/Developer/ibc/bc/number.c:611: warning: incompatible implicit declaration of built-in function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c: In function '_one_mult':
+o/Users/sixt06/Developer/ibc/bc/number.c:905: warning: incompatible implicit declaration of built-in function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c:909: warning: implicit declaration of function 'memcpy'
+o/Users/sixt06/Developer/ibc/bc/number.c:909: warning: incompatible implicit declaration of built-in function 'memcpy'
+o/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_divide':
+o/Users/sixt06/Developer/ibc/bc/number.c:960: warning: incompatible implicit declaration of built-in function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c:961: warning: incompatible implicit declaration of built-in function 'memcpy'
+o/Users/sixt06/Developer/ibc/bc/number.c:982: warning: incompatible implicit declaration of built-in function 'memset'
+o/Users/sixt06/Developer/ibc/bc/number.c:983: warning: incompatible implicit declaration of built-in function 'memcpy'
+o/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_out_long':
+o/Users/sixt06/Developer/ibc/bc/number.c:1446: warning: implicit declaration of function 'strlen'
+o/Users/sixt06/Developer/ibc/bc/number.c:1446: warning: incompatible implicit declaration of built-in function 'strlen'
+lSLF07#2@47"Compile /Users/sixt06/Developer/ibc/bc/number.c300612093#300612094#0(1861"/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_new_num':/Users/sixt06/Developer/ibc/bc/number.c:80: warning: implicit declaration of function 'memset'/Users/sixt06/Developer/ibc/bc/number.c:80: warning: incompatible implicit declaration of built-in function 'memset'/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_sub':/Users/sixt06/Developer/ibc/bc/number.c:562: warning: incompatible implicit declaration of built-in function 'memset'/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_add':/Users/sixt06/Developer/ibc/bc/number.c:611: warning: incompatible implicit declaration of built-in function 'memset'/Users/sixt06/Developer/ibc/bc/number.c: In function '_one_mult':/Users/sixt06/Developer/ibc/bc/number.c:905: warning: incompatible implicit declaration of built-in function 'memset'/Users/sixt06/Developer/ibc/bc/number.c:909: warning: implicit declaration of function 'memcpy'/Users/sixt06/Developer/ibc/bc/number.c:909: warning: incompatible implicit declaration of built-in function 'memcpy'/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_divide':/Users/sixt06/Developer/ibc/bc/number.c:960: warning: incompatible implicit declaration of built-in function 'memset'/Users/sixt06/Developer/ibc/bc/number.c:961: warning: incompatible implicit declaration of built-in function 'memcpy'/Users/sixt06/Developer/ibc/bc/number.c:982: warning: incompatible implicit declaration of built-in function 'memset'/Users/sixt06/Developer/ibc/bc/number.c:983: warning: incompatible implicit declaration of built-in function 'memcpy'/Users/sixt06/Developer/ibc/bc/number.c: In function 'bc_out_long':/Users/sixt06/Developer/ibc/bc/number.c:1446: warning: implicit declaration of function 'strlen'/Users/sixt06/Developer/ibc/bc/number.c:1446: warning: incompatible implicit declaration of built-in function 'strlen'13(22@41"Implicit declaration of function 'memset'300612093#67#95#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#80#0#80#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'memset'300612093#162#117#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#80#0#80#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memset'300612093#342#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#562#0#562#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memset'300612093#523#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#611#0#611#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memset'300612093#707#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#905#0#905#0#0"0(22@41"Implicit declaration of function 'memcpy'300612093#825#96#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#909#0#909#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'memcpy'300612093#921#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#909#0#909#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memset'300612093#1105#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#960#0#960#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memcpy'300612093#1223#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#961#0#961#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memset'300612093#1341#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#982#0#982#0#0"0(22@63"Incompatible implicit declaration of built-in function 'memcpy'300612093#1459#118#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#983#0#983#0#0"0(22@41"Implicit declaration of function 'strlen'300612093#1645#97#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#1446#0#1446#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'strlen'300612093#1742#119#0(6@39"/Users/sixt06/Developer/ibc/bc/number.c284450220#1446#0#1446#0#0"0(0#0#39"/Users/sixt06/Developer/ibc/bc/number.c8612772320#1788"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/number.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/number.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/scan.o /Users/sixt06/Developer/ibc/bc/scan.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.663053
+e300612093.961649
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/scan.o
+x/Users/sixt06/Developer/ibc/bc/scan.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+oscan.l: In function 'yylex':
+oscan.l:319: warning: pointer targets in assignment differ in signedness
+oscan.l:335: warning: pointer targets in assignment differ in signedness
+oscan.l:336: warning: pointer targets in assignment differ in signedness
+lSLF07#2@45"Compile /Users/sixt06/Developer/ibc/bc/scan.c300612093#300612093#0(245"scan.l: In function 'yylex':scan.l:319: warning: pointer targets in assignment differ in signednessscan.l:335: warning: pointer targets in assignment differ in signednessscan.l:336: warning: pointer targets in assignment differ in signedness3(22@50"Pointer targets in assignment differ in signedness300612093#29#72#0(6@6"scan.l300612093#319#0#319#0#0"0(22@50"Pointer targets in assignment differ in signedness300612093#101#72#0(6@6"scan.l300612093#335#0#335#0#0"0(22@50"Pointer targets in assignment differ in signedness300612093#173#72#0(6@6"scan.l300612093#336#0#336#0#0"0(0#0#37"/Users/sixt06/Developer/ibc/bc/scan.c8611134432#1784"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/scan.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/scan.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/storage.o /Users/sixt06/Developer/ibc/bc/storage.c normal i386 c com.apple.compilers.gcc.4_2
+s300612093.961749
+e300612094.304636
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/storage.o
+x/Users/sixt06/Developer/ibc/bc/storage.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@48"Compile /Users/sixt06/Developer/ibc/bc/storage.c300612093#300612094#0(0"0(0#0#40"/Users/sixt06/Developer/ibc/bc/storage.c8611462208#1790"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/storage.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/storage.o0#
+
+CCompileC build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/util.o /Users/sixt06/Developer/ibc/bc/util.c normal i386 c com.apple.compilers.gcc.4_2
+s300612094.304735
+e300612094.631279
+r1
+xCompileC
+xbuild/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/util.o
+x/Users/sixt06/Developer/ibc/bc/util.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/sixt06/Developer/ibc/bc/util.c300612094#300612094#0(0"0(0#0#37"/Users/sixt06/Developer/ibc/bc/util.c8612626656#1784"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -include /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch -c /Users/sixt06/Developer/ibc/bc/util.c -o /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/util.o0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/AccessoryView.xib
+s300612088.297324
+e300612088.880422
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/AccessoryView.xib
+lSLF07#2@28"CompileXIB AccessoryView.xib300612088#300612088#0(0"0(0#0#45"/Users/sixt06/Developer/ibc/AccessoryView.xib8611390880#546"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/AccessoryView.nib /Users/sixt06/Developer/ibc/AccessoryView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/CLIViewController.xib
+s300612086.765393
+e300612088.344419
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/CLIViewController.xib
+lSLF07#2@40"CompileXIB Classes/CLIViewController.xib300612086#300612088#0(0"0(0#0#57"/Users/sixt06/Developer/ibc/Classes/CLIViewController.xib8613377216#562"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/CLIViewController.nib /Users/sixt06/Developer/ibc/Classes/CLIViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.xib
+s300612089.677019
+e300612090.251573
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.xib
+lSLF07#2@44"CompileXIB Classes/ConsoleViewController.xib300612089#300612090#0(0"0(0#0#61"/Users/sixt06/Developer/ibc/Classes/ConsoleViewController.xib8609063808#570"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ConsoleViewController.nib /Users/sixt06/Developer/ibc/Classes/ConsoleViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/HelpViewController.xib
+s300612088.344518
+e300612089.112693
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/HelpViewController.xib
+lSLF07#2@41"CompileXIB Classes/HelpViewController.xib300612088#300612089#0(0"0(0#0#58"/Users/sixt06/Developer/ibc/Classes/HelpViewController.xib8605325376#564"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/HelpViewController.nib /Users/sixt06/Developer/ibc/Classes/HelpViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.xib
+s300612089.112784
+e300612089.676898
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.xib
+lSLF07#2@47"CompileXIB Classes/ScriptEditViewController.xib300612089#300612089#0(0"0(0#0#64"/Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.xib8609409984#576"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptEditViewController.nib /Users/sixt06/Developer/ibc/Classes/ScriptEditViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.xib
+s300612089.419498
+e300612090.057739
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.xib
+lSLF07#2@47"CompileXIB Classes/ScriptInfoViewController.xib300612089#300612090#0(0"0(0#0#64"/Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.xib8605432576#576"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptInfoViewController.nib /Users/sixt06/Developer/ibc/Classes/ScriptInfoViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.xib
+s300612088.881248
+e300612089.419403
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.xib
+lSLF07#2@48"CompileXIB Classes/ScriptTableViewController.xib300612088#300612089#0(0"0(0#0#65"/Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.xib8613860928#578"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptTableViewController.nib /Users/sixt06/Developer/ibc/Classes/ScriptTableViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.xib
+s300612090.251666
+e300612090.907575
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.xib
+lSLF07#2@48"CompileXIB Classes/ScriptTitleViewController.xib300612090#300612090#0(0"0(0#0#65"/Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.xib8613596064#578"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptTitleViewController.nib /Users/sixt06/Developer/ibc/Classes/ScriptTitleViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/Classes/VariablesViewController.xib
+s300612090.057923
+e300612090.654201
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/Classes/VariablesViewController.xib
+lSLF07#2@46"CompileXIB Classes/VariablesViewController.xib300612090#300612090#0(0"0(0#0#63"/Users/sixt06/Developer/ibc/Classes/VariablesViewController.xib8614251040#574"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/VariablesViewController.nib /Users/sixt06/Developer/ibc/Classes/VariablesViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/MainWindow.xib
+s300612086.055076
+e300612088.297149
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib300612086#300612088#0(0"0(0#0#42"/Users/sixt06/Developer/ibc/MainWindow.xib8607110272#540"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/MainWindow.nib /Users/sixt06/Developer/ibc/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/sixt06/Developer/ibc/ScriptEditAccessoryView.xib
+s300612090.655669
+e300612091.098977
+r1
+xCompileXIB
+x/Users/sixt06/Developer/ibc/ScriptEditAccessoryView.xib
+lSLF07#2@38"CompileXIB ScriptEditAccessoryView.xib300612090#300612091#0(0"0(0#0#55"/Users/sixt06/Developer/ibc/ScriptEditAccessoryView.xib8612110208#566"    cd /Users/sixt06/Developer/ibc    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/ScriptEditAccessoryView.nib /Users/sixt06/Developer/ibc/ScriptEditAccessoryView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCopyPlistFile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Entitlements.plist Entitlements.plist
+s300612086.056743
+e300612086.763808
+r1
+xCopyPlistFile
+x/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Entitlements.plist
+xEntitlements.plist
+lSLF07#2@23"Copy Entitlements.plist300612086#300612086#0(0"0(0#0#46"/Users/sixt06/Developer/ibc/Entitlements.plist8606760512#374"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 Entitlements.plist --outdir /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CCpResource build/Release-iphonesimulator/BCMobile.app/BCMobile.png BCMobile.png
+s300612086.764734
+e300612086.838224
+r1
+xCpResource
+xbuild/Release-iphonesimulator/BCMobile.app/BCMobile.png
+xBCMobile.png
+lSLF07#2@17"Copy BCMobile.png300612086#300612086#0(0"0(0#0#40"/Users/sixt06/Developer/ibc/BCMobile.png8613547296#447"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/sixt06/Developer/ibc/BCMobile.png /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CCpResource build/Release-iphonesimulator/BCMobile.app/Settings.bundle Settings.bundle
+s300612086.763902
+e300612086.951161
+r1
+xCpResource
+xbuild/Release-iphonesimulator/BCMobile.app/Settings.bundle
+xSettings.bundle
+lSLF07#2@20"Copy Settings.bundle300612086#300612086#0(0"0(0#0#43"/Users/sixt06/Developer/ibc/Settings.bundle8613803648#450"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/sixt06/Developer/ibc/Settings.bundle /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CCpResource build/Release-iphonesimulator/BCMobile.app/extensions.bc extensions.bc
+s300612090.654329
+e300612090.689608
+r1
+xCpResource
+xbuild/Release-iphonesimulator/BCMobile.app/extensions.bc
+xextensions.bc
+lSLF07#2@18"Copy extensions.bc300612090#300612090#0(0"0(0#0#41"/Users/sixt06/Developer/ibc/extensions.bc8612506688#448"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/sixt06/Developer/ibc/extensions.bc /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CCpResource build/Release-iphonesimulator/BCMobile.app/help.html help.html
+s300612088.880514
+e300612088.917481
+r1
+xCpResource
+xbuild/Release-iphonesimulator/BCMobile.app/help.html
+xhelp.html
+lSLF07#2@14"Copy help.html300612088#300612088#0(0"0(0#0#37"/Users/sixt06/Developer/ibc/help.html8613937760#444"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/sixt06/Developer/ibc/help.html /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CCpResource build/Release-iphonesimulator/BCMobile.app/libmath.b bc/libmath.b
+s300612086.055938
+e300612086.551546
+r1
+xCpResource
+xbuild/Release-iphonesimulator/BCMobile.app/libmath.b
+xbc/libmath.b
+lSLF07#2@17"Copy bc/libmath.b300612086#300612086#0(0"0(0#0#40"/Users/sixt06/Developer/ibc/bc/libmath.b8607014464#447"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/sixt06/Developer/ibc/bc/libmath.b /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CCpResource build/Release-iphonesimulator/BCMobile.app/scientific_constants.bc scientific_constants.bc
+s300612090.655055
+e300612090.681145
+r1
+xCpResource
+xbuild/Release-iphonesimulator/BCMobile.app/scientific_constants.bc
+xscientific_constants.bc
+lSLF07#2@28"Copy scientific_constants.bc300612090#300612090#0(0"0(0#0#51"/Users/sixt06/Developer/ibc/scientific_constants.bc8612381184#458"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/sixt06/Developer/ibc/scientific_constants.bc /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+
+CGenerateDSYMFile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app.dSYM /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile
+s300612096.157547
+e300612096.249280
+r1
+xGenerateDSYMFile
+x/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app.dSYM
+x/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile
+lSLF07#2@116"GenerateDSYMFile build/Release-iphonesimulator/BCMobile.app.dSYM build/Release-iphonesimulator/BCMobile.app/BCMobile300612096#300612096#0(0"0(0#0#79"/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile8612648800#357"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile -o /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app.dSYM0#
+
+CLd /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile normal i386
+s300612096.085901
+e300612096.157446
+r1
+xLd
+x/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile
+xnormal
+xi386
+lSLF07#2@84"Link /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile300612096#300612096#0(0"0(0#0#0"8609488416#858"    cd /Users/sixt06/Developer/ibc    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -filelist /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/Objects-normal/i386/BCMobile.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/BCMobile0#
+
+CProcessInfoPlistFile /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Info.plist BCMobile-Info.plist
+s300612086.051283
+e300612086.054991
+r1
+xProcessInfoPlistFile
+x/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Info.plist
+xBCMobile-Info.plist
+lSLF07#2@27"Process BCMobile-Info.plist300612086#300612086#0(0"0(0#0#47"/Users/sixt06/Developer/ibc/BCMobile-Info.plist8608852448#453"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility BCMobile-Info.plist -genpkginfo /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app/Info.plist0#
+
+CProcessPCH /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch.gch BCMobile_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s300612091.099105
+e300612092.825814
+r1
+xProcessPCH
+x/var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch.gch
+xBCMobile_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile BCMobile_Prefix.pch300612091#300612092#0(0"0(0#0#47"/Users/sixt06/Developer/ibc/BCMobile_Prefix.pch8611333696#1735"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -c /Users/sixt06/Developer/ibc/BCMobile_Prefix.pch -o /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-bxprnnredhmiewakqotxtapcdtrc/BCMobile_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch.gch BCMobile_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s300612091.100734
+e300612091.854119
+r1
+xProcessPCH
+x/var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch.gch
+xBCMobile_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile BCMobile_Prefix.pch300612091#300612091#0(0"0(0#0#47"/Users/sixt06/Developer/ibc/BCMobile_Prefix.pch8611273216#1681"    cd /Users/sixt06/Developer/ibc    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-generated-files.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-own-target-headers.hmap -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-all-target-headers.hmap -iquote /Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/BCMobile-project-headers.hmap -F/Users/sixt06/Developer/ibc/build/Release-iphonesimulator -I/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/include -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources/i386 -I/Users/sixt06/Developer/ibc/build/BCMobile.build/Release-iphonesimulator/BCMobile.build/DerivedSources -c /Users/sixt06/Developer/ibc/BCMobile_Prefix.pch -o /var/folders/OV/OVsKNZXmGgK5fBzRcizmLk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/BCMobile_Prefix-clrawldclnqaaocugdvaotlyqpfh/BCMobile_Prefix.pch.gch0#
+
+CTouch /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app
+s300612096.249384
+e300612096.255098
+r1
+xTouch
+x/Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app
+lSLF07#2@76"Touch /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app300612096#300612096#0(0"0(0#0#0"8611246944#259"    cd /Users/sixt06/Developer/ibc    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/sixt06/Developer/ibc/build/Release-iphonesimulator/BCMobile.app0#
+

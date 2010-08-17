@@ -1,0 +1,1161 @@
+<HTML>
+<HEAD>
+<!-- Created by texi2html 1.56k from ../bc.texi on 20 March 2001 -->
+
+<TITLE>BC Mobile Manual</TITLE>
+</HEAD>
+<BODY>
+<H1><CODE>BC Mobile</CODE></H1>
+<H2>an arbitrary precision calculator language for iPhone</H2>
+<H2>version 2.0</H2>
+<H2>Based on GNU bc 1.06 by Philip A. Nelson</H2>
+<ADDRESS>Donut System LSI</ADDRESS>
+<P>
+<P><HR><P>
+<H1><A NAME="TOC">Table of Contents</A></H1>
+<UL>
+<LI><A NAME="TOC1" HREF="#SEC1">Introduction</A>
+<UL>
+<LI><A NAME="TOC2" HREF="#SEC2">Description</A>
+<LI><A NAME="TOC3" HREF="#SEC3">GUI Usage</A>
+</UL>
+<LI><A NAME="TOC4" HREF="#SEC4">Basic Elements</A>
+<UL>
+<LI><A NAME="TOC5" HREF="#SEC5">Numbers</A>
+<LI><A NAME="TOC6" HREF="#SEC6">Variables</A>
+<LI><A NAME="TOC7" HREF="#SEC7">Comments</A>
+</UL>
+<LI><A NAME="TOC8" HREF="#SEC8">Expressions</A>
+<UL>
+<LI><A NAME="TOC9" HREF="#SEC9">About Expressions and Special Variables</A>
+<LI><A NAME="TOC10" HREF="#SEC10">Basic Expressions</A>
+<LI><A NAME="TOC11" HREF="#SEC11">Relational Expressions</A>
+<LI><A NAME="TOC12" HREF="#SEC12">Boolean Expressions</A>
+<LI><A NAME="TOC13" HREF="#SEC13">Precedence</A>
+<LI><A NAME="TOC14" HREF="#SEC14">Special Expressions</A>
+</UL>
+<LI><A NAME="TOC15" HREF="#SEC15">Statements</A>
+<UL>
+<LI><A NAME="TOC16" HREF="#SEC16">Pseudo Statements</A>
+</UL>
+<LI><A NAME="TOC17" HREF="#SEC17">Functions</A>
+<UL>
+<LI><A NAME="TOC18" HREF="#SEC18">Math Library Functions</A>
+</UL>
+<LI><A NAME="TOC19" HREF="#SEC19">Examples</A>
+<LI><A NAME="TOC20" HREF="#SEC20">Readline and Libedit Options</A>
+<LI><A NAME="TOC21" HREF="#SEC21">GNU <CODE>bc</CODE> and Other Implementations</A>
+<LI><A NAME="TOC22" HREF="#SEC22">Limits</A>
+<LI><A NAME="TOC23" HREF="#SEC23">Environment Variables</A>
+</UL>
+<P><HR><P>
+
+
+<H1><A NAME="SEC1" HREF="#TOC1">Introduction</A></H1>
+
+
+
+<H2><A NAME="SEC2" HREF="#TOC2">Description</A></H2>
+
+<P>
+<!-- <CODE>bc</CODE> [ -hlwsqv ] [long-options] [ <VAR> file ...</VAR> ] --!>
+
+
+<P>
+<CODE>bc</CODE> is a language that supports arbitrary precision numbers
+with interactive execution of statements.  There are some similarities
+in the syntax to the C programming language. 
+A standard math library is available by command line option.
+If requested, the math library is defined before processing any files.
+<CODE>bc</CODE> starts by processing code from all the files listed
+on the command line in the order listed.  After all files have been
+processed, <CODE>bc</CODE> reads from the standard input.  All code is
+executed as it is read.  (If a file contains a command to halt the
+processor, <CODE>bc</CODE> will never read from the standard input.)
+
+
+<P>
+This version of <CODE>bc</CODE> contains several extensions beyond
+traditional <CODE>bc</CODE> implementations and the POSIX draft standard.
+Command line options can cause these extensions to print a warning or to
+be rejected.  This document describes the language accepted by this
+processor.  Extensions will be identified as such.
+
+
+<P>
+The author would like to thank Steve Sommars
+(<A HREF="mailto:Steve.Sommars@att.com">Steve.Sommars@att.com</A>) for his extensive help in testing the
+implementation.  Many great suggestions were given.  This is a much
+better product due to his involvement.
+
+
+<P>
+Email bug reports to <A HREF="mailto:bug-bc@gnu.org">bug-bc@gnu.org</A> or <A HREF="mailto:appstore@donutsystemlsi.com">appstore@donutsystemlsi.com</A>. Be sure to include
+the word "bc" somewhere in the "Subject:" field.
+
+
+
+
+<H2><A NAME="SEC3" HREF="#TOC3">GUI Usage</A></H2>
+
+<P>
+BC Mobile provides GUI interface to use easily. Basically, it starts on command line interface which is very similar with GNU bc on other machine, such as on Linux. In this toolbar provides some features which are described below:
+
+<UL>
+<LI>C (Clear) : clear command screen</LI>
+<LI>L (Last) : input last on your screen</LI>
+<LI>S (Script) : change to script mode</LI>
+<LI>V (Variables) : set scale, ibase, obase variables</LI>
+<LI>? (Help) : show this page</LI>
+<LI> ( ) + - * / : input specific symbol</LI>
+</UL>
+
+<P>
+You can easily write your own bc script and interactively execute it in script mode. To change the script mode you can push 'S' button on toolbar. You can also set <CODE>load on startup</CODE> properties of script, which allow to execute it when BC Mobile app is launched. And you can also use <CODE>read()</CODE> function to get a user input. All these things are accessible on a script mode toolbar:
+
+<UL>
+<LI>Information : get detail information of the selected script</LI>
+<LI>Rename : change name of the selected script</LI>
+<LI>Execute : execute the selected script</LI>
+</UL>
+
+<P>
+In script execution mode you can execute it again and copy its result to clipboard. You can paste this result on your mail or web site.
+
+<H1><A NAME="SEC4" HREF="#TOC4">Basic Elements</A></H1>
+
+
+
+<H2><A NAME="SEC5" HREF="#TOC5">Numbers</A></H2>
+
+<P>
+The most basic element in <CODE>bc</CODE> is the number.  Numbers are
+arbitrary precision numbers.  This precision is both in the integer part
+and the fractional part.  All numbers are represented internally in
+decimal and all computation is done in decimal.  (This version truncates
+results from divide and multiply operations.)  There are two attributes
+of numbers, the length and the scale.  The length is the total number of
+significant decimal digits in a number and the scale is the total number
+of decimal digits after the decimal point.  For example, .000001 has a
+length of 6 and scale of 6, while 1935.000 has a length of 7 and a scale
+of 3.
+
+
+
+
+<H2><A NAME="SEC6" HREF="#TOC6">Variables</A></H2>
+
+<P>
+Numbers are stored in two types of variables, simple variables and
+arrays.  Both simple variables and array variables are named.  Names
+begin with a letter followed by any number of letters, digits and
+underscores.  All letters must be lower case.  (Full alphanumeric
+names are an extension. In POSIX <CODE>bc</CODE> all names are a single
+lower case letter.)  The type of variable is clear by the context
+because all array variable names will be followed by brackets ( [ ] ).
+
+
+<P>
+There are four special variables, <VAR>scale</VAR>, <VAR>ibase</VAR>, <VAR>obase</VAR>, and
+<VAR>last</VAR>.  <VAR>scale</VAR> defines how some operations use digits after the
+decimal point.  The default value of <VAR>scale</VAR> is 0. <VAR>ibase</VAR>
+and <VAR>obase</VAR> define the conversion base for input and output
+numbers.  The default for both input and output is base 10.
+<VAR>last</VAR> (an extension) is a variable that has the value of the last
+printed number.  These will be discussed in further detail where
+appropriate.  All of these variables may have values assigned to them
+as well as used in expressions.
+
+
+
+
+<H2><A NAME="SEC7" HREF="#TOC7">Comments</A></H2>
+
+<P>
+Comments in <CODE>bc</CODE> start with the characters <CODE>/*</CODE> and end with
+the characters <CODE>*/</CODE>.  Comments may start anywhere and appear as a
+single space in the input.  (This causes comments to delimit other
+input items.  For example, a comment can not be found in the middle of
+a variable name.)  Comments include any newlines (end of line) between
+the start and the end of the comment.
+
+
+<P>
+To support the use of scripts for <CODE>bc</CODE>, a single line comment has been
+added as an extension.  A single line comment starts at a <CODE>#</CODE>
+character and continues to the next end of the line.  The end of line
+character is not part of the comment and is processed normally.
+
+
+
+
+<H1><A NAME="SEC8" HREF="#TOC8">Expressions</A></H1>
+
+
+
+<H2><A NAME="SEC9" HREF="#TOC9">About Expressions and Special Variables</A></H2>
+
+<P>
+The numbers are manipulated by expressions and statements.  Since
+the language was designed to be interactive, statements and expressions
+are executed as soon as possible.  There is no main program.  Instead,
+code is executed as it is encountered.  (Functions, discussed in
+detail later, are defined when encountered.)
+
+
+<P>
+A simple expression is just a constant. <CODE>bc</CODE> converts constants
+into internal decimal numbers using the current input base, specified by
+the variable <VAR>ibase</VAR>. (There is an exception in functions.)  The
+legal values of <VAR>ibase</VAR> are 2 through 16.  Assigning a value outside
+this range to <VAR>ibase</VAR> will result in a value of 2 or 16.  Input
+numbers may contain the characters 0-9 and A-F. (Note: They must be
+capitals.  Lower case letters are variable names.)  Single digit numbers
+always have the value of the digit regardless of the value of
+<VAR>ibase</VAR>. (i.e. A = 10.)  For multi-digit numbers, <CODE>bc</CODE>
+changes all input digits greater or equal to <VAR>ibase</VAR> to the value of
+<VAR>ibase</VAR>-1.  This makes the number <CODE>FFF</CODE> always be the largest
+3 digit number of the input base.
+
+
+<P>
+Full expressions are similar to many other high level languages.
+Since there is only one kind of number, there are no rules for mixing
+types.  Instead, there are rules on the scale of expressions.  Every
+expression has a scale.  This is derived from the scale of original
+numbers, the operation performed and in many cases, the value of the
+variable <VAR>scale</VAR>. Legal values of the variable <VAR>scale</VAR> are
+0 to the maximum number representable by a C integer.
+
+
+
+
+<H2><A NAME="SEC10" HREF="#TOC10">Basic Expressions</A></H2>
+
+<P>
+In the following descriptions of legal expressions, "expr" refers to a
+complete expression and "<VAR>var</VAR>" refers to a simple or an array variable.
+A simple variable is just a 
+
+
+<P>
+<VAR>name</VAR>
+
+
+<P>
+and an array variable is specified as 
+
+
+<P>
+<VAR>name</VAR>[<VAR>expr</VAR>] 
+
+
+<P>
+Unless specifically mentioned the scale of the result is the maximum
+scale of the expressions involved.
+
+
+<DL COMPACT>
+
+<DT><CODE>- expr</CODE>
+<DD>
+The result is the negation of the expression.
+
+<DT><CODE>++ <VAR>var</VAR></CODE>
+<DD>
+The variable is incremented by one and the new value is the result of
+the expression.
+
+<DT><CODE>-- <VAR>var</VAR></CODE>
+<DD>
+The variable
+is decremented by one and the new value is the result of the
+expression.
+
+<DT><CODE><VAR>var</VAR> ++</CODE>
+<DD>
+ The result of the expression is the value of
+the variable and then the variable is incremented by one.
+
+<DT><CODE><VAR>var</VAR> --</CODE>
+<DD>
+The result of the expression is the value of the variable and then
+the variable is decremented by one.
+
+<DT><CODE>expr + expr</CODE>
+<DD>
+The result of the expression is the sum of the two expressions.
+
+<DT><CODE>expr - expr</CODE>
+<DD>
+The result of the expression is the difference of the two expressions.
+
+<DT><CODE>expr * expr</CODE>
+<DD>
+The result of the expression is the product of the two expressions.
+
+<DT><CODE>expr / expr</CODE>
+<DD>
+The result of the expression is the quotient of the two expressions.
+The scale of the result is the value of the variable <CODE>scale</CODE>
+
+<DT><CODE>expr % expr</CODE>
+<DD>
+The result of the expression is the "remainder" and it is computed in the
+following way.  To compute a%b, first a/b is computed to <VAR>scale</VAR>
+digits.  That result is used to compute a-(a/b)*b to the scale of the
+maximum of <VAR>scale</VAR>+scale(b) and scale(a).  If <VAR>scale</VAR> is set
+to zero and both expressions are integers this expression is the
+integer remainder function.
+
+<DT><CODE>expr ^ expr</CODE>
+<DD>
+The result of the expression is the value of the first raised to the
+second. The second expression must be an integer.  (If the second
+expression is not an integer, a warning is generated and the
+expression is truncated to get an integer value.)  The scale of the
+result is <VAR>scale</VAR> if the exponent is negative.  If the exponent
+is positive the scale of the result is the minimum of the scale of the
+first expression times the value of the exponent and the maximum of
+<VAR>scale</VAR> and the scale of the first expression.  (e.g. scale(a^b)
+= min(scale(a)*b, max(<VAR>scale</VAR>, scale(a))).)  It should be noted
+that expr^0 will always return the value of 1.
+
+<DT><CODE>( expr )</CODE>
+<DD>
+This alters the standard precedence to force the evaluation of the
+expression.
+
+<DT><CODE><VAR>var</VAR> = expr</CODE>
+<DD>
+The variable is assigned the value of the expression.
+
+<DT><CODE><VAR>var</VAR> &#60;op&#62;= expr</CODE>
+<DD>
+This is equivalent to "<VAR>var</VAR> = <VAR>var</VAR> &#60;op&#62; expr" with the
+exception that the "<VAR>var</VAR>" part is evaluated only once.  This can
+make a difference if "<VAR>var</VAR>" is an array.
+</DL>
+
+
+
+<H2><A NAME="SEC11" HREF="#TOC11">Relational Expressions</A></H2>
+
+<P>
+Relational expressions are a special kind of expression that always
+evaluate to 0 or 1, 0 if the relation is false and 1 if the relation is
+true.  These may appear in any legal expression.  (POSIX <CODE>bc</CODE>
+requires that relational expressions are used only in <CODE>if</CODE>,
+<CODE>while</CODE>, and <CODE>for</CODE> statements and that only one relational
+test may be done in them.)  The relational operators are
+
+
+<DL COMPACT>
+
+<DT><CODE>expr1 &#60; expr2</CODE>
+<DD>
+The result is 1 if expr1 is strictly less than expr2.
+
+<DT><CODE>expr1 &#60;= expr2</CODE>
+<DD>
+The result is 1 if expr1 is less than or equal to expr2.
+
+<DT><CODE>expr1 &#62; expr2</CODE>
+<DD>
+The result is 1 if expr1 is strictly greater than expr2.
+
+<DT><CODE>expr1 &#62;= expr2</CODE>
+<DD>
+The result is 1 if expr1 is greater than or equal to expr2.
+
+<DT><CODE>expr1 == expr2</CODE>
+<DD>
+The result is 1 if expr1 is equal to expr2.
+
+<DT><CODE>expr1 != expr2</CODE>
+<DD>
+The result is 1 if expr1 is not equal to expr2.
+</DL>
+
+
+
+<H2><A NAME="SEC12" HREF="#TOC12">Boolean Expressions</A></H2>
+
+<P>
+Boolean operations are also legal.  (POSIX <CODE>bc</CODE> does NOT have
+boolean operations). The result of all boolean operations are 0 and 1
+(for false and true) as in relational expressions.  The boolean
+operators are:
+
+
+<DL COMPACT>
+
+<DT><CODE>!expr</CODE>
+<DD>
+The result is 1 if expr is 0.
+
+<DT><CODE>expr &#38;&#38; expr</CODE>
+<DD>
+The result is 1 if both expressions are non-zero.
+
+<DT><CODE>expr || expr</CODE>
+<DD>
+The result is 1 if either expression is non-zero.
+</DL>
+
+
+
+<H2><A NAME="SEC13" HREF="#TOC13">Precedence</A></H2>
+
+<P>
+The expression precedence is as follows: (lowest to highest)
+
+
+
+<PRE>
+|| operator, left associative
+&#38;&#38; operator, left associative
+! operator, nonassociative
+Relational operators, left associative
+Assignment operator, right associative
++ and - operators, left associative
+*, / and % operators, left associative
+^ operator, right associative
+unary - operator, nonassociative
+++ and -- operators, nonassociative
+</PRE>
+
+<P>
+This precedence was chosen so that POSIX compliant <CODE>bc</CODE> programs
+will run correctly. This will cause the use of the relational and
+logical operators to have some unusual behavior when used with
+assignment expressions.  Consider the expression:
+
+
+
+<PRE>
+a = 3 &#60; 5
+</PRE>
+
+<P>
+Most C programmers would assume this would assign the result of "3 &#60;
+5" (the value 1) to the variable "a".  What this does in <CODE>bc</CODE> is
+assign the value 3 to the variable "a" and then compare 3 to 5.  It is
+best to use parentheses when using relational and logical operators
+with the assignment operators.
+
+
+
+
+<H2><A NAME="SEC14" HREF="#TOC14">Special Expressions</A></H2>
+
+<P>
+There are a few more special expressions that are provided in
+<CODE>bc</CODE>.  These have to do with user-defined functions and standard
+functions.  They all appear as
+"<VAR>name</VAR><CODE>(</CODE><VAR>parameters</VAR><CODE>)</CODE>".  See section <A HREF="#SEC17">Functions</A>, for
+user-defined functions.  The standard functions are:
+
+
+<DL COMPACT>
+
+<DT><CODE>length ( expression )</CODE>
+<DD>
+The value of the length function is the number of significant digits in the
+expression.
+
+<DT><CODE>read ( )</CODE>
+<DD>
+The <CODE>read</CODE> function (an extension) will read a number from the
+standard input, regardless of where the function occurs.  Beware, this
+can cause problems with the mixing of data and program in the standard
+input.  The best use for this function is in a previously written
+program that needs input from the user, but never allows program code to
+be input from the user.  The value of the <CODE>read</CODE> function is the
+number read from the standard input using the current value of the
+variable <VAR>ibase</VAR> for the conversion base.
+
+<DT><CODE>scale ( expression )</CODE>
+<DD>
+The value of the <CODE>scale</CODE> function is the number of digits after the
+decimal point in the expression.
+
+<DT><CODE>sqrt ( expression )</CODE>
+<DD>
+The value of the <CODE>sqrt</CODE> function is the square root of the
+expression.  If the expression is negative, a run time error is
+generated.
+</DL>
+
+
+
+<H1><A NAME="SEC15" HREF="#TOC15">Statements</A></H1>
+
+<P>
+Statements (as in most algebraic languages) provide the sequencing of
+expression evaluation.  In <CODE>bc</CODE> statements are executed "as soon
+as possible."  Execution happens when a newline in encountered and there
+is one or more complete statements.  Due to this immediate execution,
+newlines are very important in <CODE>bc</CODE>. In fact, both a semicolon
+and a newline are used as statement separators.  An improperly placed
+newline will cause a syntax error.  Because newlines are statement
+separators, it is possible to hide a newline by using the backslash
+character.  The sequence "\&#60;nl&#62;", where &#60;nl&#62; is the newline appears to
+<CODE>bc</CODE> as whitespace instead of a newline.  A statement list is a
+series of statements separated by semicolons and newlines.  The
+following is a list of <CODE>bc</CODE> statements and what they do: (Things
+enclosed in brackets ( [ ] ) are optional parts of the statement.)
+
+
+<DL COMPACT>
+
+<DT><VAR>expression</VAR>
+<DD>
+This statement does one of two things.  If the expression starts with
+"&#60;variable&#62; &#60;assignment&#62; ...", it is considered to be an assignment
+statement.  If the expression is not an assignment statement, the
+expression is evaluated and printed to the output.  After the number is
+printed, a newline is printed.  For example, "a=1" is an assignment
+statement and "(a=1)" is an expression that has an embedded assignment.
+All numbers that are printed are printed in the base specified by the
+variable <VAR>obase</VAR>. The legal values for <VAR>obase</VAR> are 2 through
+BC_BASE_MAX (see section <A HREF="#SEC23">Environment Variables</A>).  For bases 2 through 16,
+the usual method of writing numbers is used.  For bases greater than 16,
+<CODE>bc</CODE> uses a multi-character digit method of printing the numbers
+where each higher base digit is printed as a base 10 number.  The
+multi-character digits are separated by spaces.  Each digit contains the
+number of characters required to represent the base ten value of
+"<VAR>obase</VAR> -1".  Since numbers are of arbitrary precision, some
+numbers may not be printable on a single output line.  These long
+numbers will be split across lines using the "\" as the last character
+on a line.  The maximum number of characters printed per line is 70.
+Due to the interactive nature of <CODE>bc</CODE>, printing a number causes
+the side effect of assigning the printed value to the special variable
+<VAR>last</VAR>. This allows the user to recover the last value printed
+without having to retype the expression that printed the number.
+Assigning to <VAR>last</VAR> is legal and will overwrite the last printed
+value with the assigned value.  The newly assigned value will remain
+until the next number is printed or another value is assigned to
+<VAR>last</VAR>.  (Some installations may allow the use of a single period
+(.) which is not part of a number as a short hand notation for for
+<VAR>last</VAR>.)
+
+<DT><VAR>string</VAR>
+<DD>
+The string is printed to the output.  Strings start with a double quote
+character and contain all characters until the next double quote character.
+All characters are taken literally, including any newline.  No newline
+character is printed after the string.
+
+<DT><VAR><CODE>print</CODE> <VAR>list</VAR></VAR>
+<DD>
+The <CODE>print</CODE> statement (an extension) provides another method of
+output.  The <VAR>list</VAR> is a list of strings and expressions separated by
+commas.  Each string or expression is printed in the order of the list.
+No terminating newline is printed.  Expressions are evaluated and their
+value is printed and assigned to the variable <CODE>last</CODE>. Strings in
+the print statement are printed to the output and may contain special
+characters.  Special characters start with the backslash character (\e).
+The special characters recognized by <CODE>bc</CODE> are "a" (alert or
+bell), "b" (backspace), "f" (form feed), "n" (newline), "r" (carriage
+return), "q" (double quote), "t" (tab), and "\e" (backslash).  Any other
+character following the backslash will be ignored.
+
+<DT><VAR>{ statement_list }</VAR>
+<DD>
+This is the compound statement.  It allows multiple statements to be
+grouped together for execution.
+
+<DT><VAR><CODE>if</CODE> ( expression ) statement1 [<CODE>else</CODE> statement2]</VAR>
+<DD>
+The if statement evaluates the expression and executes statement1 or
+statement2 depending on the value of the expression.  If the expression
+is non-zero, statement1 is executed.  If statement2 is present and
+the value of the expression is 0, then statement2 is executed.  (The
+<CODE>else</CODE> clause is an extension.)
+
+<DT><VAR><CODE>while</CODE> ( expression ) statement</VAR>
+<DD>
+The while statement will execute the statement while the expression
+is non-zero.  It evaluates the expression before each execution of
+the statement.   Termination of the loop is caused by a zero
+expression value or the execution of a <CODE>break</CODE> statement.
+
+<DT><VAR><CODE>for</CODE> ( [expression1] ; [expression2] ; [expression3] ) statement</VAR>
+<DD>
+The <CODE>for</CODE> statement controls repeated execution of the statement.
+<VAR>Expression1</VAR> is evaluated before the loop.  <VAR>Expression2</VAR> is
+evaluated before each execution of the statement.  If it is non-zero,
+the statement is evaluated.  If it is zero, the loop is terminated.
+After each execution of the statement, <VAR>expression3</VAR> is evaluated
+before the reevaluation of expression2.  If <VAR>expression1</VAR> or
+<VAR>expression3</VAR> are missing, nothing is evaluated at the point they
+would be evaluated.  If <VAR>expression2</VAR> is missing, it is the same as
+substituting the value 1 for <VAR>expression2</VAR>.  (The optional
+expressions are an extension. POSIX <CODE>bc</CODE> requires all three
+expressions.)  The following is equivalent code for the <CODE>for</CODE>
+statement:
+
+
+<PRE>
+expression1;
+while (expression2) {
+   statement;
+   expression3;
+}
+</PRE>
+
+<DT><VAR><CODE>break</CODE></VAR>
+<DD>
+This statement causes a forced exit of the most recent enclosing <CODE>while</CODE>
+statement or <CODE>for</CODE> statement.
+
+<DT><VAR><CODE>continue</CODE></VAR>
+<DD>
+The <CODE>continue</CODE> statement (an extension)  causes the most recent enclosing
+<CODE>for</CODE> statement to start the next iteration.
+
+<DT><VAR><CODE>halt</CODE></VAR>
+<DD>
+The <CODE>halt</CODE> statement (an extension) is an executed statement that
+causes the <CODE>bc</CODE> processor to quit only when it is executed.  For
+example, "if (0 == 1) halt" will not cause <CODE>bc</CODE> to terminate
+because the <CODE>halt</CODE> is not executed.
+
+<DT><VAR><CODE>return</CODE></VAR>
+<DD>
+Return the value 0 from a function.  (See section <A HREF="#SEC17">Functions</A>.)
+
+<DT><VAR><CODE>return</CODE> ( expression )</VAR>
+<DD>
+Return the value of the expression from a function.  (See section <A HREF="#SEC17">Functions</A>.)
+As an extension, the parenthesis are not required.
+</DL>
+
+
+
+<H2><A NAME="SEC16" HREF="#TOC16">Pseudo Statements</A></H2>
+
+<P>
+These statements are not statements in the traditional sense.  They are
+not executed statements.  Their function is performed at "compile" time.
+
+
+<DL COMPACT>
+
+<DT><CODE>limits</CODE>
+<DD>
+Print the local limits enforced by the local version of <CODE>bc</CODE>.  This
+is an extension.
+
+<DT><CODE>quit</CODE>
+<DD>
+When the <CODE>quit</CODE> statement is read, the <CODE>bc</CODE> processor
+is terminated, regardless of where the <CODE>quit</CODE> statement is found.  For
+example, "if (0 == 1) quit" will cause <CODE>bc</CODE> to terminate.
+
+<DT><CODE>warranty</CODE>
+<DD>
+Print a longer warranty notice.  This is an extension.
+</DL>
+
+
+
+<H1><A NAME="SEC17" HREF="#TOC17">Functions</A></H1>
+
+<P>
+Functions provide a method of defining a computation that can be
+executed later.  Functions in <CODE>bc</CODE> always compute a value and
+return it to the caller.  Function definitions are "dynamic" in the
+sense that a function is undefined until a definition is encountered in
+the input.  That definition is then used until another definition
+function for the same name is encountered.  The new definition then
+replaces the older definition.  A function is defined as follows:
+
+
+
+<PRE>
+<CODE>define</CODE> <VAR>name</VAR> <CODE>(</CODE> <VAR>parameters</VAR> <CODE>)</CODE> <CODE>{</CODE> <VAR>newline</VAR>
+    <VAR>auto_list   statement_list</VAR> <CODE>}</CODE>
+</PRE>
+
+<P>
+A function call is just an expression of the form
+"<CODE>name</CODE> <CODE>(</CODE><VAR>parameters</VAR><CODE>)</CODE>".
+
+
+<P>
+Parameters are numbers or arrays (an extension).  In the function definition,
+zero or more parameters are defined by listing their names separated by
+commas.  Numbers are only call by value parameters.  Arrays are only
+call by variable.  Arrays are specified in the parameter definition by
+the notation "<VAR>name</VAR><CODE>[ ]</CODE>".   In the function call, actual parameters
+are full expressions for number parameters.  The same notation is used
+for passing arrays as for defining array parameters.  The named array is
+passed by variable to the function.  Since function definitions are dynamic,
+parameter numbers and types are checked when a function is called.  Any
+mismatch in number or types of parameters will cause a runtime error.
+A runtime error will also occur for the call to an undefined function.
+
+
+<P>
+The <VAR>auto_list</VAR> is an optional list of variables that are for
+"local" use.  The syntax of the auto list (if present) is "<CODE>auto</CODE>
+<VAR>name</VAR>, ... ;".  (The semicolon is optional.)  Each <VAR>name</VAR> is
+the name of an auto variable.  Arrays may be specified by using the
+same notation as used in parameters.  These variables have their
+values pushed onto a stack at the start of the function.  The
+variables are then initialized to zero and used throughout the
+execution of the function.  At function exit, these variables are
+popped so that the original value (at the time of the function call)
+of these variables are restored.  The parameters are really auto
+variables that are initialized to a value provided in the function
+call.  
+Auto variables are different than traditional local variables
+because if function A calls function B, B may access function
+A's auto variables by just using the same name, unless function B has
+called them auto variables.  Due to the fact that auto variables and
+parameters are pushed onto a stack, <CODE>bc</CODE> supports recursive functions.
+
+
+<P>
+The function body is a list of <CODE>bc</CODE> statements.  Again, statements
+are separated by semicolons or newlines.  Return statements cause the
+termination of a function and the return of a value.  There are two
+versions of the return statement.  The first form, "<CODE>return</CODE>", returns
+the value 0 to the calling expression.  The second form, 
+"<CODE>return</CODE> ( <VAR>expression</VAR> )", computes the value of the expression
+and returns that value to the calling expression.  There is an implied
+"<CODE>return</CODE> (0)" at the end of every function.  This allows a function
+to terminate and return 0 without an explicit <CODE>return</CODE> statement.
+
+
+<P>
+Functions also change the usage of the variable <VAR>ibase</VAR>.  All
+constants in the function body will be converted using the value of
+<VAR>ibase</VAR> at the time of the function call.  Changes of <VAR>ibase</VAR>
+will be ignored during the execution of the function except for the
+standard function <CODE>read</CODE>, which will always use the current value
+of <VAR>ibase</VAR> for conversion of numbers.
+
+
+<P>
+As an extension, the format of the definition has been slightly relaxed.
+The standard requires the opening brace be on the same line as the 
+<CODE>define</CODE> keyword and all other parts must be on following lines.
+This version of <CODE>bc</CODE> will allow any number of newlines before and
+after the opening brace of the function.  For example, the following
+definitions are legal.
+
+
+
+<PRE>
+   define d (n) { return (2*n); }
+   define d (n)
+       { return (2*n); }
+</PRE>
+
+
+
+<H2><A NAME="SEC18" HREF="#TOC18">Math Library Functions</A></H2>
+
+<P>
+If <CODE>bc</CODE> is invoked with the <CODE>-l</CODE> option, a math library is
+preloaded and the default <VAR>scale</VAR> is set to 20.  The math functions will
+calculate their results to the scale set at the time of their call.  The
+math library defines the following functions:
+
+
+<DL COMPACT>
+
+<DT><CODE>s (<VAR>x</VAR>)</CODE>
+<DD>
+The sine of <VAR>x</VAR>, <VAR>x</VAR> is in radians.
+
+<DT><CODE>c (<VAR>x</VAR>)</CODE>
+<DD>
+The cosine of <VAR>x</VAR>, <VAR>x</VAR> is in radians.
+
+<DT><CODE>a (<VAR>x</VAR>)</CODE>
+<DD>
+The arctangent of <VAR>x</VAR>, arctangent returns radians.
+
+<DT><CODE>l (<VAR>x</VAR>)</CODE>
+<DD>
+The natural logarithm of <VAR>x</VAR>.
+
+<DT><CODE><VAR>e</VAR> (<VAR>x</VAR>)</CODE>
+<DD>
+The exponential function of raising <VAR>e</VAR> to the value <VAR>x</VAR>.
+
+<DT><CODE><VAR>j</VAR> (<VAR>n,x</VAR>)</CODE>
+<DD>
+The bessel function of integer order <VAR>n</VAR> of <VAR>x</VAR>.
+</DL>
+
+
+
+<H1><A NAME="SEC19" HREF="#TOC19">Examples</A></H1>
+
+<P>
+In /bin/sh,  the following will assign the value of "pi" to the shell
+variable <VAR>pi</VAR>.
+
+<PRE>
+
+pi=$(echo "scale=10; 4*a(1)" | bc -l)
+
+</PRE>
+
+<P>
+The following is the definition of the exponential function used in the
+math library.  This function is written in POSIX <CODE>bc</CODE>.
+
+
+
+<PRE>
+
+scale = 20
+
+/* Uses the fact that e^x = (e^(x/2))^2
+   When x is small enough, we use the series:
+     e^x = 1 + x + x^2/2! + x^3/3! + ...
+*/
+
+define e(x) {
+  auto  a, d, e, f, i, m, v, z
+
+  /* Check the sign of x. */
+  if (x&#60;0) {
+    m = 1
+    x = -x
+  } 
+
+  /* Precondition x. */
+  z = scale;
+  scale = 4 + z + .44*x;
+  while (x &#62; 1) {
+    f += 1;
+    x /= 2;
+  }
+
+  /* Initialize the variables. */
+  v = 1+x
+  a = x
+  d = 1
+
+  for (i=2; 1; i++) {
+    e = (a *= x) / (d *= i)
+    if (e == 0) {
+      if (f&#62;0) while (f--)  v = v*v;
+      scale = z
+      if (m) return (1/v);
+      return (v/1);
+    }
+    v += e
+  }
+}
+
+</PRE>
+
+<P>
+The following is code that uses the extended features of <CODE>bc</CODE> to
+implement a simple program for calculating checkbook balances.  This
+program is best kept in a file so that it can be used many times 
+without having to retype it at every use.
+
+
+
+<PRE>
+
+scale=2
+print "\nCheck book program\n!"
+print "  Remember, deposits are negative transactions.\n"
+print "  Exit by a 0 transaction.\n\n"
+
+print "Initial balance? "; bal = read()
+bal /= 1
+print "\n"
+while (1) {
+  "current balance = "; bal
+  "transaction? "; trans = read()
+  if (trans == 0) break;
+  bal -= trans
+  bal /= 1
+}
+quit
+
+</PRE>
+
+<P>
+The following is the definition of the recursive factorial function.
+
+
+
+<PRE>
+
+define f (x) {
+  if (x &#60;= 1) return (1);
+  return (f(x-1) * x);
+}
+
+</PRE>
+
+
+
+<H1><A NAME="SEC20" HREF="#TOC20">Readline and Libedit Options</A></H1>
+
+<P>
+GNU <CODE>bc</CODE> can be compiled (via a configure option) to use the GNU
+<CODE>readline</CODE> input editor library or the BSD <CODE>libedit</CODE>
+library.  This allows the user to do
+more editing of lines before sending them to <CODE>bc</CODE>.  It also
+allows for a history of previous lines typed.  When this option is
+selected, <CODE>bc</CODE> has one more special variable.  This special
+variable, <VAR>history</VAR> is the number of lines of history retained.  A
+value of -1 means that an unlimited number of history lines are
+retained.  This is the default value.  Setting the value of
+<VAR>history</VAR> to a positive number restricts the number of history lines
+to the number given.  The value of 0 disables the history feature.  For
+more information, read the user manuals for the GNU <CODE>readline</CODE>,
+<CODE>history</CODE> and BSD <CODE>libedit</CODE> libraries.  One can not
+enable both <CODE>readline</CODE> and <CODE>libedit</CODE> at the same time.
+
+
+
+
+<H1><A NAME="SEC21" HREF="#TOC21">GNU <CODE>bc</CODE> and Other Implementations</A></H1>
+
+<P>
+This version of <CODE>bc</CODE> was implemented from the POSIX P1003.2/D11
+draft and contains several differences and extensions relative to the
+draft and traditional implementations.  It is not implemented in the
+traditional way using <CODE>dc</CODE>.  This version is a single process
+which parses and runs a byte code translation of the program.  There is
+an "undocumented" option (-c) that causes the program to output the byte
+code to the standard output instead of running it.  It was mainly used
+for debugging the parser and preparing the math library.
+
+
+<P>
+A major source of differences is extensions, where a feature is extended
+to add more functionality and additions, where new features are added.
+The following is the list of differences and extensions.
+
+
+<DL COMPACT>
+
+<DT><VAR>LANG environment</VAR>
+<DD>
+This version does not conform to the POSIX standard in the processing
+of the LANG environment variable and all environment variables starting
+with LC_.
+
+<DT><VAR>names</VAR>
+<DD>
+Traditional and POSIX <CODE>bc</CODE>
+have single letter names for functions, variables and arrays.  They have
+been extended to be multi-character names that start with a letter and
+may contain letters, numbers and the underscore character.
+
+<DT><VAR>Strings</VAR>
+<DD>
+Strings are not allowed to contain NUL characters.  POSIX says all characters
+must be included in strings.
+
+<DT><VAR>last</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not have a \fBlast variable.  Some implementations
+of <CODE>bc</CODE> use the period (.) in a similar way.  
+
+<DT><VAR>comparisons</VAR>
+<DD>
+POSIX <CODE>bc</CODE> allows comparisons only in the <CODE>if</CODE> statement,
+the <CODE>while</CODE> statement, and the second expression of the <CODE>for</CODE>
+statement.  Also, only one relational operation is allowed in each of
+those statements.
+
+<DT><VAR>if statement, else clause</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not have an <CODE>else</CODE> clause.
+
+<DT><VAR>for statement</VAR>
+<DD>
+POSIX <CODE>bc</CODE> requires all expressions to be present in the
+<CODE>for</CODE> statement.
+
+<DT><VAR>&#38;&#38;, ||, !</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not have the logical operators.
+
+<DT><VAR>read function</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not have a <CODE>read</CODE> function.
+
+<DT><VAR>print statement</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not have a <CODE>print</CODE> statement.
+
+<DT><VAR>continue statement</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not have a continue statement.
+
+<DT><VAR>array parameters</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not (currently) support array parameters in full.
+The POSIX grammar allows for arrays in function definitions, but does
+not provide a method to specify an array as an actual parameter.  (This
+is most likely an oversight in the grammar.)  Traditional implementations
+of <CODE>bc</CODE> have only call by value array parameters.
+
+<DT><VAR>function format</VAR>
+<DD>
+POSIX <CODE>bc</CODE> requires the opening brace on the same line as the 
+<CODE>define</CODE> key word and the <CODE>auto</CODE> statement on the next line.
+
+<DT><VAR>=+, =-, =*, =/, =%, =^</VAR>
+<DD>
+POSIX <CODE>bc</CODE> does not require these "old style" assignment
+operators to be defined.  This version may allow these "old style"
+assignments.  Use the <CODE>limits</CODE> statement to see if the installed
+version supports them.  If it does support the "old style" assignment
+operators, the statement "a =- 1" will decrement <CODE>a</CODE> by 1 instead
+of setting <CODE>a</CODE> to the value -1.
+
+<DT><VAR>spaces in numbers</VAR>
+<DD>
+Other implementations of <CODE>bc</CODE> allow spaces in numbers.  For example,
+"x=1 3" would assign the value 13 to the variable x.  The same statement
+would cause a syntax error in this version of <CODE>bc</CODE>.
+
+<DT><VAR>errors and execution</VAR>
+<DD>
+This implementation varies from other implementations in terms of what
+code will be executed when syntax and other errors are found in the
+program.  If a syntax error is found in a function definition, error
+recovery tries to find the beginning of a statement and continue to
+parse the function.  Once a syntax error is found in the function, the
+function will not be callable and becomes undefined.
+Syntax errors in the interactive execution code will invalidate the
+current execution block.  The execution block is terminated by an
+end of line that appears after a complete sequence of statements.
+For example, 
+
+
+<PRE>
+a = 1
+b = 2
+</PRE>
+
+has two execution blocks and
+
+
+<PRE>
+{ a = 1
+  b = 2 }
+</PRE>
+
+has one execution block.  Any runtime error will terminate the execution
+of the current execution block.  A runtime warning will not terminate the
+current execution block.
+
+<DT><VAR>Interrupts</VAR>
+<DD>
+During an interactive session, the SIGINT signal (usually generated by
+the control-C character from the terminal) will cause execution of the
+current execution block to be interrupted.  It will display a "runtime"
+error indicating which function was interrupted.  After all runtime
+structures have been cleaned up, a message will be printed to notify the
+user that <CODE>bc</CODE> is ready for more input.  All previously defined
+functions remain defined and the value of all non-auto variables are the
+value at the point of interruption.  All auto variables and function
+parameters are removed during the clean up process.  During a
+non-interactive session, the SIGINT signal will terminate the entire run
+of <CODE>bc</CODE>.
+</DL>
+
+
+
+<H1><A NAME="SEC22" HREF="#TOC22">Limits</A></H1>
+
+<P>
+The following are the limits currently in place for this <CODE>bc</CODE>
+processor.  Some of them may have been changed by an installation.  Use
+the <CODE>limits</CODE> statement to see the actual values.
+
+
+<DL COMPACT>
+
+<DT><CODE>BC_BASE_MAX</CODE>
+<DD>
+The maximum output base is currently set at 999.  The maximum input base
+is 16.
+
+<DT><CODE>BC_DIM_MAX</CODE>
+<DD>
+This is currently an arbitrary limit of 65535 as distributed.  Your
+installation may be different.
+
+<DT><CODE>BC_SCALE_MAX</CODE>
+<DD>
+The number of digits after the decimal point is limited to INT_MAX digits.
+Also, the number of digits before the decimal point is limited to INT_MAX
+digits.
+
+<DT><CODE>BC_STRING_MAX</CODE>
+<DD>
+The limit on the number of characters in a string is INT_MAX characters.
+
+<DT><CODE>exponent</CODE>
+<DD>
+The value of the exponent in the raise operation (^) is limited to LONG_MAX.
+
+<DT><CODE>multiply</CODE>
+<DD>
+The multiply routine may yield incorrect results if a number
+has more than LONG_MAX / 90 total digits.  For 32 bit longs, this number is
+23,860,929 digits.
+
+<DT><CODE>variable names</CODE>
+<DD>
+The current limit on the number of unique names is 32767 for each of
+simple variables, arrays and functions.
+</DL>
+
+
+
+<H1><A NAME="SEC23" HREF="#TOC23">Environment Variables</A></H1>
+
+<P>
+The following environment variables are processed by <CODE>bc</CODE>:
+
+
+<DL COMPACT>
+
+<DT><CODE>POSIXLY_CORRECT</CODE>
+<DD>
+This is the same as the -s option (see section <A HREF="#SEC3">Command Line Options</A>).
+
+<DT><CODE>BC_ENV_ARGS</CODE>
+<DD>
+This is another mechanism to get arguments to <CODE>bc</CODE>.  The format
+is the same as the command line arguments.  These arguments are
+processed first, so any files listed in the environent arguments are
+processed before any command line argument files.  This allows the user
+to set up "standard" options and files to be processed at every
+invocation of <CODE>bc</CODE>.  The files in the environment variables
+would typically contain function definitions for functions the user
+wants defined every time <CODE>bc</CODE> is run.
+
+<DT><CODE>BC_LINE_LENGTH</CODE>
+<DD>
+This should be an integer specifing the number of characters in an
+output line for numbers. This includes the backslash and newline
+characters for long numbers.
+</DL>
+
+<P><HR><P>
+This document was generated on 20 March 2001 using
+<A HREF="http://wwwinfo.cern.ch/dis/texi2html/">texi2html</A>&nbsp;1.56k.
+</BODY>
+</HTML>
